@@ -1,9 +1,9 @@
 Getting and Cleaning Data Final Assignment
 ==========================================
 
-This assignment considers the results of \[Human Activity Recognition
-Using Smartphones Data Set
-\]<a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" class="uri">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a>.
+This assignment considers the results of [Human Activity Recognition
+Using Smartphones Data
+Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 The experiments have been carried out with a group of 30 volunteers
 within an age bracket of 19-48 years. Each person performed six
 activities (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING,
@@ -29,8 +29,7 @@ run\_analysis.R
 It is the main script of the repository, because of generate the results
 required. The steps of the script are:
 
-1. Merges the training and the test sets to create one data set with target variables.
-======================================================================================
+### 1. Merges the training and the test sets to create one data set with target variables.
 
 Datasets x, y and subject are loaded in separate dataframes. Script
 binds these files:
@@ -47,8 +46,7 @@ Dataset/test/subject\_test.txt
 
 And then, binds three subset created to generate merged\_data dataframe.
 
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-==========================================================================================
+### 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
 Out of 561 columns of the data frames, finds the target features, which
 are the features with measurements about mean and standard deviation,
@@ -57,22 +55,19 @@ and extracts them as well as those that indicate the ‘subject’ and
 In that sense, meanFreq() columns are not used as they are derived
 columns.
 
-3. Uses descriptive activity names to name the activities in the data set
-=========================================================================
+### 3. Uses descriptive activity names to name the activities in the data set
 
 Loaded activity labels are binded to the merged\_data dataframe,
 replacing the value labels of activity, that contains integers from 1 to
 6, by more descriptive names. With this, script creates a new dataframe
 called tidy\_data.
 
-4. Appropriately labels the data set with descriptive variable names.
-=====================================================================
+### 4. Appropriately labels the data set with descriptive variable names.
 
 Script takes the tidy\_data dataframe and assign the appropriate labels
 for the variable names cleaning the existing ones.
 
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-=================================================================================================================================================
+### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Groups the tidy dataframe created in step 4, by ‘subject’ and
 ‘activity’, using dplyr package, and then, summarizes each variable to
