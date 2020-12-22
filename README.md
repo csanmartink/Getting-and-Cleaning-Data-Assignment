@@ -18,10 +18,13 @@ training data and 30% the test data.
 This readme file explain the process to clean and tidy the project
 dataset and presents the files that considers.
 
-Details on the files that exist in this repository: \* README.md:
-Markdown document that explains how to obtain data. \* run\_analysis.R:
-R script to transform raw data set in a tidy one. \* tidyset.txt: tidy
-dataset produced as an output from the R script.
+Details on the files that exist in this repository:
+
+-   README.md: Markdown document that explains how to obtain data.
+
+-   run\_analysis.R: R script to transform raw data set in a tidy one.
+
+-   tidyset.txt: tidy dataset produced as an output from the R script.
 
 run\_analysis.R
 ---------------
@@ -34,15 +37,23 @@ required. The steps of the script are:
 Datasets x, y and subject are loaded in separate dataframes. Script
 binds these files:
 
-To generate X dataframe: \* UCI HAR Dataset/train/X\_train.txt \* UCI
-HAR Dataset/test/X\_test.txt
+To generate X dataframe:
 
-To generate Y dataframe: \* UCI HAR Dataset/train/y\_train.txt \* UCI
-HAR Dataset/test/y\_test.txt
+-   UCI HAR Dataset/train/X\_train.txt
 
-To generate subject dataframe: \* UCI HAR
-Dataset/train/subject\_train.txt \* UCI HAR
-Dataset/test/subject\_test.txt
+-   UCI HAR Dataset/test/X\_test.txt
+
+To generate Y dataframe:
+
+-   UCI HAR Dataset/train/y\_train.txt
+
+-   UCI HAR Dataset/test/y\_test.txt
+
+To generate subject dataframe:
+
+-   UCI HAR Dataset/train/subject\_train.txt
+
+-   UCI HAR Dataset/test/subject\_test.txt
 
 And then, binds three subset created to generate merged\_data dataframe.
 
