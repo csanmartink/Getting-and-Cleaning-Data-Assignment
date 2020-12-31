@@ -10,9 +10,10 @@ When you click the **Knit** button a document will be generated that
 includes both content as well as the output of any embedded R code
 chunks within the document. You can embed an R code chunk like this:
 
-For each record in the dataset it is provided: \* Triaxial acceleration
-from the accelerometer (total acceleration) and the estimated body
-acceleration.
+For each record in the dataset it is provided:
+
+-   Triaxial acceleration from the accelerometer (total acceleration)
+    and the estimated body acceleration.
 
 -   Triaxial Angular velocity from the gyroscope.
 
@@ -43,17 +44,15 @@ You can also embed plots, for example:
 <td>integer</td>
 <td>1 / 30</td>
 </tr>
-<tr class="even">
-<td>2</td>
-<td>activity</td>
-<td>character</td>
-<td>LAYING</td>
-</tr>
 </tbody>
 </table>
 
-SITTING STANDING WALKING WALKING\_DOWNSTAIRS WALKING\_UPSTAIRS | Not
-available 3 | tBodyAccAvrgX | numeric | 0.22 / 0.3 | 0.27 4 |
+2 | activity | character |
+<td>
+LAYING/SITTING/STANDING/WALKING/WALKING\_DOWNSTAIRS/WALKING\_UPSTAIRS
+</td>
+
+| Not available 3 | tBodyAccAvrgX | numeric | 0.22 / 0.3 | 0.27 4 |
 tBodyAccAvrgY | numeric | -0.04 / 0 | -0.02 5 | tBodyAccAvrgZ | numeric
 | -0.15 / -0.08 | -0.11 6 | tGravityAccAvrgX | numeric | -0.68 / 0.97 |
 0.7 7 | tGravityAccAvrgY | numeric | -0.48 / 0.96 | -0.02 8 |
