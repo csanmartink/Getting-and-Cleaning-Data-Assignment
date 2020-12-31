@@ -4,9 +4,8 @@ Getting and Cleaning data assignment: Codebook
 Description
 -----------
 
-Additional information about the variables, data and transformations
-used in the course project for the Johns Hopkins Getting and Cleaning
-Data course.
+Additional information about the tidy variable used in the course
+project for the Johns Hopkins Getting and Cleaning Data course.
 
 Source Data
 -----------
