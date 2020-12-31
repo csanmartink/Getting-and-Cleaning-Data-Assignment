@@ -54,7 +54,7 @@ You can also embed plots, for example:
 <td>2</td>
 <td>activity</td>
 <td>character</td>
-<td>LAYING/SITTING/STANDING/WALKING/WALKING_DOWNSTAIRS/WALKING_UPSTAIRS</td>
+<td>LAYING<br>SITTING<br>STANDING/WALKING/WALKING_DOWNSTAIRS/WALKING_UPSTAIRS</td>
 </tr>
 <tr class="odd">
 <td>3</td>
