@@ -29,6 +29,12 @@ Including Plots
 You can also embed plots, for example:
 
 <table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 56%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>n</th>
@@ -44,77 +50,449 @@ You can also embed plots, for example:
 <td>integer</td>
 <td>1 / 30</td>
 </tr>
+<tr class="even">
+<td>2</td>
+<td>activity</td>
+<td>character</td>
+<td>LAYING/SITTING/STANDING/WALKING/WALKING_DOWNSTAIRS/WALKING_UPSTAIRS</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>tBodyAccAvrgX</td>
+<td>numeric</td>
+<td>0.22 / 0.3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>tBodyAccAvrgY</td>
+<td>numeric</td>
+<td>-0.04 / 0</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>tBodyAccAvrgZ</td>
+<td>numeric</td>
+<td>-0.15 / -0.08</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>tGravityAccAvrgX</td>
+<td>numeric</td>
+<td>-0.68 / 0.97</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>tGravityAccAvrgY</td>
+<td>numeric</td>
+<td>-0.48 / 0.96</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>tGravityAccAvrgZ</td>
+<td>numeric</td>
+<td>-0.5 / 0.96</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>tBodyAccJerkAvrgX</td>
+<td>numeric</td>
+<td>0.04 / 0.13</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>tBodyAccJerkAvrgY</td>
+<td>numeric</td>
+<td>-0.04 / 0.06</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>tBodyAccJerkAvrgZ</td>
+<td>numeric</td>
+<td>-0.07 / 0.04</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>tBodyGyroscopeAvrgX</td>
+<td>numeric</td>
+<td>-0.21 / 0.19</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>tBodyGyroscopeAvrgY</td>
+<td>numeric</td>
+<td>-0.2 / 0.03</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>tBodyGyroscopeAvrgZ</td>
+<td>numeric</td>
+<td>-0.07 / 0.18</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>tBodyGyroscopeJerkAvrgX</td>
+<td>numeric</td>
+<td>-0.16 / -0.02</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>tBodyGyroscopeJerkAvrgY</td>
+<td>numeric</td>
+<td>-0.08 / -0.01</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>tBodyGyroscopeJerkAvrgZ</td>
+<td>numeric</td>
+<td>-0.09 / -0.01</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>tBodyAccMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.64</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>tGravityAccMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.64</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>tBodyAccJerkMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.43</td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>tBodyGyroscopeMagAvrg</td>
+<td>numeric</td>
+<td>-0.98 / 0.42</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>tBodyGyroscopeJerkMagAvrg</td>
+<td>numeric</td>
+<td>-1 / 0.09</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>FreqBodyAccAvrgX</td>
+<td>numeric</td>
+<td>-1 / 0.54</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>FreqBodyAccAvrgY</td>
+<td>numeric</td>
+<td>-0.99 / 0.52</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>FreqBodyAccAvrgZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.28</td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>FreqBodyAccJerkAvrgX</td>
+<td>numeric</td>
+<td>-0.99 / 0.47</td>
+</tr>
+<tr class="odd">
+<td>27</td>
+<td>FreqBodyAccJerkAvrgY</td>
+<td>numeric</td>
+<td>-0.99 / 0.28</td>
+</tr>
+<tr class="even">
+<td>28</td>
+<td>FreqBodyAccJerkAvrgZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.16</td>
+</tr>
+<tr class="odd">
+<td>29</td>
+<td>FreqBodyGyroscopeAvrgX</td>
+<td>numeric</td>
+<td>-0.99 / 0.47</td>
+</tr>
+<tr class="even">
+<td>30</td>
+<td>FreqBodyGyroscopeAvrgY</td>
+<td>numeric</td>
+<td>-0.99 / 0.33</td>
+</tr>
+<tr class="odd">
+<td>31</td>
+<td>FreqBodyGyroscopeAvrgZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.49</td>
+</tr>
+<tr class="even">
+<td>32</td>
+<td>FreqBodyAccMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.59</td>
+</tr>
+<tr class="odd">
+<td>33</td>
+<td>FreqBodyAccJerkMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.54</td>
+</tr>
+<tr class="even">
+<td>34</td>
+<td>FreqBodyGyroscopeMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.2</td>
+</tr>
+<tr class="odd">
+<td>35</td>
+<td>FreqBodyGyroscopeJerkMagAvrg</td>
+<td>numeric</td>
+<td>-1 / 0.15</td>
+</tr>
+<tr class="even">
+<td>36</td>
+<td>Angle(tBodyAccMean,Grav)</td>
+<td>numeric</td>
+<td>-0.16 / 0.13</td>
+</tr>
+<tr class="odd">
+<td>37</td>
+<td>Angle(tBodyAccJerkMean),GravMean)</td>
+<td>numeric</td>
+<td>-0.12 / 0.2</td>
+</tr>
+<tr class="even">
+<td>38</td>
+<td>Angle(tBodyGyroscopeMean,GravMean)</td>
+<td>numeric</td>
+<td>-0.39 / 0.44</td>
+</tr>
+<tr class="odd">
+<td>39</td>
+<td>Angle(tBodyGyroscopeJerkMean,GravMean)</td>
+<td>numeric</td>
+<td>-0.22 / 0.18</td>
+</tr>
+<tr class="even">
+<td>40</td>
+<td>Angle(X,GravMean)</td>
+<td>numeric</td>
+<td>-0.95 / 0.74</td>
+</tr>
+<tr class="odd">
+<td>41</td>
+<td>Angle(Y,GravMean)</td>
+<td>numeric</td>
+<td>-0.87 / 0.42</td>
+</tr>
+<tr class="even">
+<td>42</td>
+<td>Angle(Z,GravMean)</td>
+<td>numeric</td>
+<td>-0.87 / 0.39</td>
+</tr>
+<tr class="odd">
+<td>43</td>
+<td>tBodyAccStdX</td>
+<td>numeric</td>
+<td>-1 / 0.63</td>
+</tr>
+<tr class="even">
+<td>44</td>
+<td>tBodyAccStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.62</td>
+</tr>
+<tr class="odd">
+<td>45</td>
+<td>tBodyAccStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.61</td>
+</tr>
+<tr class="even">
+<td>46</td>
+<td>tGravityAccStdX</td>
+<td>numeric</td>
+<td>-1 / -0.83</td>
+</tr>
+<tr class="odd">
+<td>47</td>
+<td>tGravityAccStdY</td>
+<td>numeric</td>
+<td>-0.99 / -0.64</td>
+</tr>
+<tr class="even">
+<td>48</td>
+<td>tGravityAccStdZ</td>
+<td>numeric</td>
+<td>-0.99 / -0.61</td>
+</tr>
+<tr class="odd">
+<td>49</td>
+<td>tBodyAccJerkStdX</td>
+<td>numeric</td>
+<td>-0.99 / 0.54</td>
+</tr>
+<tr class="even">
+<td>50</td>
+<td>tBodyAccJerkStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.36</td>
+</tr>
+<tr class="odd">
+<td>51</td>
+<td>tBodyAccJerkStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.03</td>
+</tr>
+<tr class="even">
+<td>52</td>
+<td>tBodyGyroscopeStdX</td>
+<td>numeric</td>
+<td>-0.99 / 0.27</td>
+</tr>
+<tr class="odd">
+<td>53</td>
+<td>tBodyGyroscopeStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.48</td>
+</tr>
+<tr class="even">
+<td>54</td>
+<td>tBodyGyroscopeStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.56</td>
+</tr>
+<tr class="odd">
+<td>55</td>
+<td>tBodyGyroscopeJerkStdX</td>
+<td>numeric</td>
+<td>-1 / 0.18</td>
+</tr>
+<tr class="even">
+<td>56</td>
+<td>tBodyGyroscopeJerkStdY</td>
+<td>numeric</td>
+<td>-1 / 0.3</td>
+</tr>
+<tr class="odd">
+<td>57</td>
+<td>tBodyGyroscopeJerkStdZ</td>
+<td>numeric</td>
+<td>-1 / 0.19</td>
+</tr>
+<tr class="even">
+<td>58</td>
+<td>tBodyAccMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.43</td>
+</tr>
+<tr class="odd">
+<td>59</td>
+<td>tGravityAccMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.43</td>
+</tr>
+<tr class="even">
+<td>60</td>
+<td>tBodyAccJerkMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.45</td>
+</tr>
+<tr class="odd">
+<td>61</td>
+<td>tBodyGyroscopeMagStd</td>
+<td>numeric</td>
+<td>-0.98 / 0.3</td>
+</tr>
+<tr class="even">
+<td>62</td>
+<td>tBodyGyroscopeJerkMagStd</td>
+<td>numeric</td>
+<td>-1 / 0.25</td>
+</tr>
+<tr class="odd">
+<td>63</td>
+<td>FreqBodyAccStdX</td>
+<td>numeric</td>
+<td>-1 / 0.66</td>
+</tr>
+<tr class="even">
+<td>64</td>
+<td>FreqBodyAccStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.56</td>
+</tr>
+<tr class="odd">
+<td>65</td>
+<td>FreqBodyAccStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.69</td>
+</tr>
+<tr class="even">
+<td>66</td>
+<td>FreqBodyAccJerkStdX</td>
+<td>numeric</td>
+<td>-1 / 0.48</td>
+</tr>
+<tr class="odd">
+<td>67</td>
+<td>FreqBodyAccJerkStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.35</td>
+</tr>
+<tr class="even">
+<td>68</td>
+<td>FreqBodyAccJerkStdZ</td>
+<td>numeric</td>
+<td>-0.99 / -0.01</td>
+</tr>
+<tr class="odd">
+<td>69</td>
+<td>FreqBodyGyroscopeStdX</td>
+<td>numeric</td>
+<td>-0.99 / 0.2</td>
+</tr>
+<tr class="even">
+<td>70</td>
+<td>FreqBodyGyroscopeStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.65</td>
+</tr>
+<tr class="odd">
+<td>71</td>
+<td>FreqBodyGyroscopeStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.52</td>
+</tr>
+<tr class="even">
+<td>72</td>
+<td>FreqBodyAccMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.18</td>
+</tr>
+<tr class="odd">
+<td>73</td>
+<td>FreqBodyAccJerkMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.32</td>
+</tr>
+<tr class="even">
+<td>74</td>
+<td>FreqBodyGyroscopeMagStd</td>
+<td>numeric</td>
+<td>-0.98 / 0.24</td>
+</tr>
+<tr class="odd">
+<td>75</td>
+<td>FreqBodyGyroscopeJerkMagStd</td>
+<td>numeric</td>
+<td>-1 / 0.29</td>
+</tr>
 </tbody>
 </table>
-
-2 | activity | character |
-<tr>
-<td>
-LAYING/SITTING/STANDING/WALKING/WALKING\_DOWNSTAIRS/WALKING\_UPSTAIRS
-</td>
-</tr>
-
-| Not available 3 | tBodyAccAvrgX | numeric | 0.22 / 0.3 | 0.27 4 |
-tBodyAccAvrgY | numeric | -0.04 / 0 | -0.02 5 | tBodyAccAvrgZ | numeric
-| -0.15 / -0.08 | -0.11 6 | tGravityAccAvrgX | numeric | -0.68 / 0.97 |
-0.7 7 | tGravityAccAvrgY | numeric | -0.48 / 0.96 | -0.02 8 |
-tGravityAccAvrgZ | numeric | -0.5 / 0.96 | 0.07 9 | tBodyAccJerkAvrgX |
-numeric | 0.04 / 0.13 | 0.08 10 | tBodyAccJerkAvrgY | numeric | -0.04 /
-0.06 | 0.01 11 | tBodyAccJerkAvrgZ | numeric | -0.07 / 0.04 | 0 12 |
-tBodyGyroscopeAvrgX | numeric | -0.21 / 0.19 | -0.03 13 |
-tBodyGyroscopeAvrgY | numeric | -0.2 / 0.03 | -0.07 14 |
-tBodyGyroscopeAvrgZ | numeric | -0.07 / 0.18 | 0.09 15 |
-tBodyGyroscopeJerkAvrgX | numeric | -0.16 / -0.02 | -0.1 16 |
-tBodyGyroscopeJerkAvrgY | numeric | -0.08 / -0.01 | -0.04 17 |
-tBodyGyroscopeJerkAvrgZ | numeric | -0.09 / -0.01 | -0.05 18 |
-tBodyAccMagAvrg | numeric | -0.99 / 0.64 | -0.5 19 | tGravityAccMagAvrg
-| numeric | -0.99 / 0.64 | -0.5 20 | tBodyAccJerkMagAvrg | numeric |
--0.99 / 0.43 | -0.61 21 | tBodyGyroscopeMagAvrg | numeric | -0.98 / 0.42
-| -0.57 22 | tBodyGyroscopeJerkMagAvrg | numeric | -1 / 0.09 | -0.74 23
-| FreqBodyAccAvrgX | numeric | -1 / 0.54 | -0.58 24 | FreqBodyAccAvrgY |
-numeric | -0.99 / 0.52 | -0.49 25 | FreqBodyAccAvrgZ | numeric | -0.99 /
-0.28 | -0.63 26 | FreqBodyAccJerkAvrgX | numeric | -0.99 / 0.47 | -0.61
-27 | FreqBodyAccJerkAvrgY | numeric | -0.99 / 0.28 | -0.59 28 |
-FreqBodyAccJerkAvrgZ | numeric | -0.99 / 0.16 | -0.71 29 |
-FreqBodyGyroscopeAvrgX | numeric | -0.99 / 0.47 | -0.64 30 |
-FreqBodyGyroscopeAvrgY | numeric | -0.99 / 0.33 | -0.68 31 |
-FreqBodyGyroscopeAvrgZ | numeric | -0.99 / 0.49 | -0.6 32 |
-FreqBodyAccMagAvrg | numeric | -0.99 / 0.59 | -0.54 33 |
-FreqBodyAccJerkMagAvrg | numeric | -0.99 / 0.54 | -0.58 34 |
-FreqBodyGyroscopeMagAvrg | numeric | -0.99 / 0.2 | -0.67 35 |
-FreqBodyGyroscopeJerkMagAvrg | numeric | -1 / 0.15 | -0.76 36 |
-Angle(tBodyAccMean,Grav) | numeric | -0.16 / 0.13 | 0.01 37 |
-Angle(tBodyAccJerkMean),GravMean) | numeric | -0.12 / 0.2 | 0 38 |
-Angle(tBodyGyroscopeMean,GravMean) | numeric | -0.39 / 0.44 | 0.02 39 |
-Angle(tBodyGyroscopeJerkMean,GravMean) | numeric | -0.22 / 0.18 | -0.01
-40 | Angle(X,GravMean) | numeric | -0.95 / 0.74 | -0.52 41 |
-Angle(Y,GravMean) | numeric | -0.87 / 0.42 | 0.08 42 | Angle(Z,GravMean)
-| numeric | -0.87 / 0.39 | -0.04 43 | tBodyAccStdX | numeric | -1 / 0.63
-| -0.56 44 | tBodyAccStdY | numeric | -0.99 / 0.62 | -0.46 45 |
-tBodyAccStdZ | numeric | -0.99 / 0.61 | -0.58 46 | tGravityAccStdX |
-numeric | -1 / -0.83 | -0.96 47 | tGravityAccStdY | numeric | -0.99 /
--0.64 | -0.95 48 | tGravityAccStdZ | numeric | -0.99 / -0.61 | -0.94 49
-| tBodyAccJerkStdX | numeric | -0.99 / 0.54 | -0.59 50 |
-tBodyAccJerkStdY | numeric | -0.99 / 0.36 | -0.57 51 | tBodyAccJerkStdZ
-| numeric | -0.99 / 0.03 | -0.74 52 | tBodyGyroscopeStdX | numeric |
--0.99 / 0.27 | -0.69 53 | tBodyGyroscopeStdY | numeric | -0.99 / 0.48 |
--0.65 54 | tBodyGyroscopeStdZ | numeric | -0.99 / 0.56 | -0.62 55 |
-tBodyGyroscopeJerkStdX | numeric | -1 / 0.18 | -0.7 56 |
-tBodyGyroscopeJerkStdY | numeric | -1 / 0.3 | -0.76 57 |
-tBodyGyroscopeJerkStdZ | numeric | -1 / 0.19 | -0.71 58 | tBodyAccMagStd
-| numeric | -0.99 / 0.43 | -0.54 59 | tGravityAccMagStd | numeric |
--0.99 / 0.43 | -0.54 60 | tBodyAccJerkMagStd | numeric | -0.99 / 0.45 |
--0.58 61 | tBodyGyroscopeMagStd | numeric | -0.98 / 0.3 | -0.63 62 |
-tBodyGyroscopeJerkMagStd | numeric | -1 / 0.25 | -0.76 63 |
-FreqBodyAccStdX | numeric | -1 / 0.66 | -0.55 64 | FreqBodyAccStdY |
-numeric | -0.99 / 0.56 | -0.48 65 | FreqBodyAccStdZ | numeric | -0.99 /
-0.69 | -0.58 66 | FreqBodyAccJerkStdX | numeric | -1 / 0.48 | -0.61 67 |
-FreqBodyAccJerkStdY | numeric | -0.99 / 0.35 | -0.57 68 |
-FreqBodyAccJerkStdZ | numeric | -0.99 / -0.01 | -0.76 69 |
-FreqBodyGyroscopeStdX | numeric | -0.99 / 0.2 | -0.71 70 |
-FreqBodyGyroscopeStdY | numeric | -0.99 / 0.65 | -0.65 71 |
-FreqBodyGyroscopeStdZ | numeric | -0.99 / 0.52 | -0.66 72 |
-FreqBodyAccMagStd | numeric | -0.99 / 0.18 | -0.62 73 |
-FreqBodyAccJerkMagStd | numeric | -0.99 / 0.32 | -0.6 74 |
-FreqBodyGyroscopeMagStd | numeric | -0.98 / 0.24 | -0.67 75 |
-FreqBodyGyroscopeJerkMagStd | numeric | -1 / 0.29 | -0.77
