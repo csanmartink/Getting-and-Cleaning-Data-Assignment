@@ -26,6 +26,8 @@ Details on the files that exist in this repository:
 
 -   tidyset.txt: tidy dataset produced as an output from the R script.
 
+-   codebook.md: code book that describes the data and variables in it.
+
 run\_analysis.R
 ---------------
 
@@ -100,3 +102,8 @@ of code:
 
     tidy_data_summary <- read.table(file = "tidy_data_summary.txt",
                                     header = TRUE, check.names = FALSE, dec = ".")
+
+codebook.md
+-----------
+
+This markdown file describes `tidy_data_summary` data.
