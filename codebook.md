@@ -51,8 +51,8 @@ You can also embed plots, for example:
 <tr>
 <td>
 LAYING/SITTING/STANDING/WALKING/WALKING\_DOWNSTAIRS/WALKING\_UPSTAIRS
-</tr>
 </td>
+</tr>
 
 | Not available 3 | tBodyAccAvrgX | numeric | 0.22 / 0.3 | 0.27 4 |
 tBodyAccAvrgY | numeric | -0.04 / 0 | -0.02 5 | tBodyAccAvrgZ | numeric
