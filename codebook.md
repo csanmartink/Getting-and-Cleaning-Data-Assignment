@@ -48,8 +48,10 @@ You can also embed plots, for example:
 </table>
 
 2 | activity | character |
+<tr>
 <td>
 LAYING/SITTING/STANDING/WALKING/WALKING\_DOWNSTAIRS/WALKING\_UPSTAIRS
+</tr>
 </td>
 
 | Not available 3 | tBodyAccAvrgX | numeric | 0.22 / 0.3 | 0.27 4 |
