@@ -30,10 +30,10 @@ You can also embed plots, for example:
 
 <table>
 <colgroup>
-<col style="width: 19%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 56%" />
+<col style="width: 34%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 23%" />
 </colgroup>
 <thead>
 <tr class="header">
