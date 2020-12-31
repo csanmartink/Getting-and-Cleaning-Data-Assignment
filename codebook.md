@@ -1,78 +1,492 @@
-+--------------+---------+---------+-------------------------------------------+
-"column.names" | "class" | "range" | "mean"
-+==============+=========+=========+===========================================+
-"1" | "subject" | "integer" | "1  /  30" | "Not available"
-"2" | "activity" | "character" | "character" | "Not available"
-"3" | "tBodyAccAvrgX" | "numeric" | "0.22159824394  /  0.3014610196" | "0.274302742245795"
-"4" | "tBodyAccAvrgY" | "numeric" | "-0.0405139534294  /  -0.00130828765170213" | "-0.0178755238674415"
-"5" | "tBodyAccAvrgZ" | "numeric" | "-0.152513899520833  /  -0.07537846886" | "-0.109163815804519"
-"6" | "tGravityAccAvrgX" | "numeric" | "-0.680043155060241  /  0.974508732" | "0.697477505882702"
-"7" | "tGravityAccAvrgY" | "numeric" | "-0.479894842941176  /  0.956593814210526" | "-0.0162128361521394"
-"8" | "tGravityAccAvrgZ" | "numeric" | "-0.49508872037037  /  0.9578730416" | "0.0741278709325255"
-"9" | "tBodyAccJerkAvrgX" | "numeric" | "0.0426880986186441  /  0.130193043809524" | "0.0794735599203562"
-"10" | "tBodyAccJerkAvrgY" | "numeric" | "-0.0386872111282051  /  0.056818586275" | "0.00756520996888408"
-"11" | "tBodyAccJerkAvrgZ" | "numeric" | "-0.0674583919268293  /  0.0380533591627451" | "-0.00495340328183431"
-"12" | "tBodyGyroscopeAvrgX" | "numeric" | "-0.205775427307692  /  0.19270447595122" | "-0.0324371599031218"
-"13" | "tBodyGyroscopeAvrgY" | "numeric" | "-0.204205356087805  /  0.0274707556666667" | "-0.0742595723452297"
-"14" | "tBodyGyroscopeAvrgZ" | "numeric" | "-0.0724546025804878  /  0.179102058245614" | "0.0874446468695526"
-"15" | "tBodyGyroscopeJerkAvrgX" | "numeric" | "-0.157212539189362  /  -0.0220916265065217" | "-0.0960567959204382"
-"16" | "tBodyGyroscopeJerkAvrgY" | "numeric" | "-0.0768089915604167  /  -0.0132022768074468" | "-0.0426927819752453"
-"17" | "tBodyGyroscopeJerkAvrgZ" | "numeric" | "-0.0924998531372549  /  -0.00694066389361702" | "-0.0548018825799509"
-"18" | "tBodyAccMagAvrg" | "numeric" | "-0.986493196666667  /  0.644604325128205" | "-0.49728966685894"
-"19" | "tGravityAccMagAvrg" | "numeric" | "-0.986493196666667  /  0.644604325128205" | "-0.49728966685894"
-"20" | "tBodyAccJerkMagAvrg" | "numeric" | "-0.99281471515625  /  0.434490400974359" | "-0.607929591545179"
-"21" | "tBodyGyroscopeMagAvrg" | "numeric" | "-0.980740846769231  /  0.418004608615385" | "-0.565163077212988"
-"22" | "tBodyGyroscopeJerkMagAvrg" | "numeric" | "-0.997322526811594  /  0.0875816618205128" | "-0.736369300428253"
-"23" | "FreqBodyAccAvrgX" | "numeric" | "-0.995249932641509  /  0.537012022051282" | "-0.575799983503946"
-"24" | "FreqBodyAccAvrgY" | "numeric" | "-0.989034304057971  /  0.524187686888889" | "-0.488732713013952"
-"25" | "FreqBodyAccAvrgZ" | "numeric" | "-0.989473926666667  /  0.280735952206667" | "-0.62973875362598"
-"26" | "FreqBodyAccJerkAvrgX" | "numeric" | "-0.994630797358491  /  0.474317256051282" | "-0.613928222283428"
-"27" | "FreqBodyAccJerkAvrgY" | "numeric" | "-0.989398823913043  /  0.276716853307692" | "-0.588163069360073"
-"28" | "FreqBodyAccJerkAvrgZ" | "numeric" | "-0.992018447826087  /  0.157775692377778" | "-0.714358487490646"
-"29" | "FreqBodyGyroscopeAvrgX" | "numeric" | "-0.99312260884058  /  0.474962448333333" | "-0.636739605053057"
-"30" | "FreqBodyGyroscopeAvrgY" | "numeric" | "-0.994025488297872  /  0.328817010088889" | "-0.676686800745998"
-"31" | "FreqBodyGyroscopeAvrgZ" | "numeric" | "-0.985957788  /  0.492414379822222" | "-0.604391244378742"
-"32" | "FreqBodyAccMagAvrg" | "numeric" | "-0.986800645362319  /  0.586637550769231" | "-0.536516692548498"
-"33" | "FreqBodyAccJerkMagAvrg" | "numeric" | "-0.993998275797101  /  0.538404846128205" | "-0.575617493234432"
-"34" | "FreqBodyGyroscopeMagAvrg" | "numeric" | "-0.986535242105263  /  0.203979764835897" | "-0.667099099613148"
-"35" | "FreqBodyGyroscopeJerkMagAvrg" | "numeric" | "-0.997617389275362  /  0.146618569064407" | "-0.756385271117363"
-"36" | "Angle(tBodyAccMean,Grav)" | "numeric" | "-0.163042575021277  /  0.129153963587755" | "0.00655573583907996"
-"37" | "Angle(tBodyAccJerkMean),GravMean)" | "numeric" | "-0.120553975717391  /  0.203259965863014" | "0.000643885912133426"
-"38" | "Angle(tBodyGyroscopeMean,GravMean)" | "numeric" | "-0.389305120341463  /  0.444101172307692" | "0.0219317046182738"
-"39" | "Angle(tBodyGyroscopeJerkMean,GravMean)" | "numeric" | "-0.223672056052174  /  0.182384802705085" | "-0.0113731727087864"
-"40" | "Angle(X,GravMean)" | "numeric" | "-0.947116527659574  /  0.737784354819277" | "-0.524306549016646"
-"41" | "Angle(Y,GravMean)" | "numeric" | "-0.874567701929825  /  0.42476122745098" | "0.0786533502520241"
-"42" | "Angle(Z,GravMean)" | "numeric" | "-0.873649367  /  0.390444368518519" | "-0.0404362019002546"
-"43" | "tBodyAccStdX" | "numeric" | "-0.996068635384615  /  0.626917070512821" | "-0.557690076404401"
-"44" | "tBodyAccStdY" | "numeric" | "-0.990240946666667  /  0.616937015333333" | "-0.460462635378301"
-"45" | "tBodyAccStdZ" | "numeric" | "-0.987658662307692  /  0.609017879074074" | "-0.575560246148636"
-"46" | "tGravityAccStdX" | "numeric" | "-0.996764227384615  /  -0.829554947808219" | "-0.96375253077172"
-"47" | "tGravityAccStdY" | "numeric" | "-0.99424764884058  /  -0.643578361424658" | "-0.952429559765945"
-"48" | "tGravityAccStdZ" | "numeric" | "-0.990957249538462  /  -0.610161166287671" | "-0.93640104156585"
-"49" | "tBodyAccJerkStdX" | "numeric" | "-0.994604542264151  /  0.544273037307692" | "-0.594946699510964"
-"50" | "tBodyAccJerkStdY" | "numeric" | "-0.989513565652174  /  0.355306716915385" | "-0.565414714340423"
-"51" | "tBodyAccJerkStdZ" | "numeric" | "-0.993288313333333  /  0.0310157077775926" | "-0.735957689241115"
-"52" | "tBodyGyroscopeStdX" | "numeric" | "-0.994276591304348  /  0.267657219333333" | "-0.691639902777431"
-"53" | "tBodyGyroscopeStdY" | "numeric" | "-0.994210471914894  /  0.476518714444444" | "-0.653302029911363"
-"54" | "tBodyGyroscopeStdZ" | "numeric" | "-0.985538363333333  /  0.564875818162963" | "-0.616435294332593"
-"55" | "tBodyGyroscopeJerkStdX" | "numeric" | "-0.99654254057971  /  0.179148649684615" | "-0.703632714557601"
-"56" | "tBodyGyroscopeJerkStdY" | "numeric" | "-0.997081575652174  /  0.295945926186441" | "-0.763551835158898"
-"57" | "tBodyGyroscopeJerkStdZ" | "numeric" | "-0.995380794637681  /  0.193206498960417" | "-0.709559184010004"
-"58" | "tBodyAccMagStd" | "numeric" | "-0.986464542615385  /  0.428405922622222" | "-0.543908670845839"
-"59" | "tGravityAccMagStd" | "numeric" | "-0.986464542615385  /  0.428405922622222" | "-0.543908670845839"
-"60" | "tBodyAccJerkMagStd" | "numeric" | "-0.994646916811594  /  0.450612065720513" | "-0.584175609709768"
-"61" | "tBodyGyroscopeMagStd" | "numeric" | "-0.981372675614035  /  0.299975979851852" | "-0.630394720315622"
-"62" | "tBodyGyroscopeJerkMagStd" | "numeric" | "-0.997666071594203  /  0.250173204117966" | "-0.755015188509002"
-"63" | "FreqBodyAccStdX" | "numeric" | "-0.996604570307692  /  0.658506543333333" | "-0.552201112392524"
-"64" | "FreqBodyAccStdY" | "numeric" | "-0.990680395362319  /  0.560191344" | "-0.481478729871355"
-"65" | "FreqBodyAccStdZ" | "numeric" | "-0.987224804307692  /  0.687124163703704" | "-0.582361415029381"
-"66" | "FreqBodyAccJerkStdX" | "numeric" | "-0.995073759245283  /  0.476803887476923" | "-0.612103283207987"
-"67" | "FreqBodyAccJerkStdY" | "numeric" | "-0.990468082753623  /  0.349771285415897" | "-0.570730968650136"
-"68" | "FreqBodyAccJerkStdZ" | "numeric" | "-0.993107759855072  /  -0.00623647528983051" | "-0.756489426411787"
-"69" | "FreqBodyGyroscopeStdX" | "numeric" | "-0.994652185217391  /  0.196613286661538" | "-0.711035658050846"
-"70" | "FreqBodyGyroscopeStdY" | "numeric" | "-0.994353086595745  /  0.646233637037037" | "-0.645433416234092"
-"71" | "FreqBodyGyroscopeStdZ" | "numeric" | "-0.986725274871795  /  0.522454216314815" | "-0.657746585870822"
-"72" | "FreqBodyAccMagStd" | "numeric" | "-0.987648484461539  /  0.178684580868889" | "-0.620963293005196"
-"73" | "FreqBodyAccJerkMagStd" | "numeric" | "-0.994366667681159  /  0.316346415348718" | "-0.599160868317743"
-"74" | "FreqBodyGyroscopeMagStd" | "numeric" | "-0.981468841692308  /  0.236659662496296" | "-0.672322349574843"
-"75" | "FreqBodyGyroscopeJerkMagStd" | "numeric" | "-0.99758523057971  /  0.287834616098305" | "-0.771517051737343"
+R Markdown
+----------
+
+This is an R Markdown document. Markdown is a simple formatting syntax
+for authoring HTML, PDF, and MS Word documents. For more details on
+using R Markdown see
+<a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.
+
+When you click the **Knit** button a document will be generated that
+includes both content as well as the output of any embedded R code
+chunks within the document. You can embed an R code chunk like this:
+
+    summary(cars)
+
+    ##      speed           dist       
+    ##  Min.   : 4.0   Min.   :  2.00  
+    ##  1st Qu.:12.0   1st Qu.: 26.00  
+    ##  Median :15.0   Median : 36.00  
+    ##  Mean   :15.4   Mean   : 42.98  
+    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
+    ##  Max.   :25.0   Max.   :120.00
+
+Including Plots
+---------------
+
+You can also embed plots, for example:
+
+Note that the `echo = FALSE` parameter was added to the code chunk to
+prevent printing of the R code that generated the plot.
+
+<table>
+<thead>
+<tr class="header">
+<th>column.names</th>
+<th>class</th>
+<th>range</th>
+<th>mean</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>subject</td>
+<td>integer</td>
+<td>1 / 30</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>activity</td>
+<td>character</td>
+<td>character</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>tBodyAccAvrgX</td>
+<td>numeric</td>
+<td>0.22 / 0.3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>tBodyAccAvrgY</td>
+<td>numeric</td>
+<td>-0.04 / 0</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>tBodyAccAvrgZ</td>
+<td>numeric</td>
+<td>-0.15 / -0.08</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>tGravityAccAvrgX</td>
+<td>numeric</td>
+<td>-0.68 / 0.97</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>tGravityAccAvrgY</td>
+<td>numeric</td>
+<td>-0.48 / 0.96</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>tGravityAccAvrgZ</td>
+<td>numeric</td>
+<td>-0.5 / 0.96</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>tBodyAccJerkAvrgX</td>
+<td>numeric</td>
+<td>0.04 / 0.13</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>tBodyAccJerkAvrgY</td>
+<td>numeric</td>
+<td>-0.04 / 0.06</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>tBodyAccJerkAvrgZ</td>
+<td>numeric</td>
+<td>-0.07 / 0.04</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>tBodyGyroscopeAvrgX</td>
+<td>numeric</td>
+<td>-0.21 / 0.19</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>tBodyGyroscopeAvrgY</td>
+<td>numeric</td>
+<td>-0.2 / 0.03</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>tBodyGyroscopeAvrgZ</td>
+<td>numeric</td>
+<td>-0.07 / 0.18</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>tBodyGyroscopeJerkAvrgX</td>
+<td>numeric</td>
+<td>-0.16 / -0.02</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>tBodyGyroscopeJerkAvrgY</td>
+<td>numeric</td>
+<td>-0.08 / -0.01</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>tBodyGyroscopeJerkAvrgZ</td>
+<td>numeric</td>
+<td>-0.09 / -0.01</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>tBodyAccMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.64</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>tGravityAccMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.64</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>tBodyAccJerkMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.43</td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>tBodyGyroscopeMagAvrg</td>
+<td>numeric</td>
+<td>-0.98 / 0.42</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>tBodyGyroscopeJerkMagAvrg</td>
+<td>numeric</td>
+<td>-1 / 0.09</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>FreqBodyAccAvrgX</td>
+<td>numeric</td>
+<td>-1 / 0.54</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>FreqBodyAccAvrgY</td>
+<td>numeric</td>
+<td>-0.99 / 0.52</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>FreqBodyAccAvrgZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.28</td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>FreqBodyAccJerkAvrgX</td>
+<td>numeric</td>
+<td>-0.99 / 0.47</td>
+</tr>
+<tr class="odd">
+<td>27</td>
+<td>FreqBodyAccJerkAvrgY</td>
+<td>numeric</td>
+<td>-0.99 / 0.28</td>
+</tr>
+<tr class="even">
+<td>28</td>
+<td>FreqBodyAccJerkAvrgZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.16</td>
+</tr>
+<tr class="odd">
+<td>29</td>
+<td>FreqBodyGyroscopeAvrgX</td>
+<td>numeric</td>
+<td>-0.99 / 0.47</td>
+</tr>
+<tr class="even">
+<td>30</td>
+<td>FreqBodyGyroscopeAvrgY</td>
+<td>numeric</td>
+<td>-0.99 / 0.33</td>
+</tr>
+<tr class="odd">
+<td>31</td>
+<td>FreqBodyGyroscopeAvrgZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.49</td>
+</tr>
+<tr class="even">
+<td>32</td>
+<td>FreqBodyAccMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.59</td>
+</tr>
+<tr class="odd">
+<td>33</td>
+<td>FreqBodyAccJerkMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.54</td>
+</tr>
+<tr class="even">
+<td>34</td>
+<td>FreqBodyGyroscopeMagAvrg</td>
+<td>numeric</td>
+<td>-0.99 / 0.2</td>
+</tr>
+<tr class="odd">
+<td>35</td>
+<td>FreqBodyGyroscopeJerkMagAvrg</td>
+<td>numeric</td>
+<td>-1 / 0.15</td>
+</tr>
+<tr class="even">
+<td>36</td>
+<td>Angle(tBodyAccMean,Grav)</td>
+<td>numeric</td>
+<td>-0.16 / 0.13</td>
+</tr>
+<tr class="odd">
+<td>37</td>
+<td>Angle(tBodyAccJerkMean),GravMean)</td>
+<td>numeric</td>
+<td>-0.12 / 0.2</td>
+</tr>
+<tr class="even">
+<td>38</td>
+<td>Angle(tBodyGyroscopeMean,GravMean)</td>
+<td>numeric</td>
+<td>-0.39 / 0.44</td>
+</tr>
+<tr class="odd">
+<td>39</td>
+<td>Angle(tBodyGyroscopeJerkMean,GravMean)</td>
+<td>numeric</td>
+<td>-0.22 / 0.18</td>
+</tr>
+<tr class="even">
+<td>40</td>
+<td>Angle(X,GravMean)</td>
+<td>numeric</td>
+<td>-0.95 / 0.74</td>
+</tr>
+<tr class="odd">
+<td>41</td>
+<td>Angle(Y,GravMean)</td>
+<td>numeric</td>
+<td>-0.87 / 0.42</td>
+</tr>
+<tr class="even">
+<td>42</td>
+<td>Angle(Z,GravMean)</td>
+<td>numeric</td>
+<td>-0.87 / 0.39</td>
+</tr>
+<tr class="odd">
+<td>43</td>
+<td>tBodyAccStdX</td>
+<td>numeric</td>
+<td>-1 / 0.63</td>
+</tr>
+<tr class="even">
+<td>44</td>
+<td>tBodyAccStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.62</td>
+</tr>
+<tr class="odd">
+<td>45</td>
+<td>tBodyAccStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.61</td>
+</tr>
+<tr class="even">
+<td>46</td>
+<td>tGravityAccStdX</td>
+<td>numeric</td>
+<td>-1 / -0.83</td>
+</tr>
+<tr class="odd">
+<td>47</td>
+<td>tGravityAccStdY</td>
+<td>numeric</td>
+<td>-0.99 / -0.64</td>
+</tr>
+<tr class="even">
+<td>48</td>
+<td>tGravityAccStdZ</td>
+<td>numeric</td>
+<td>-0.99 / -0.61</td>
+</tr>
+<tr class="odd">
+<td>49</td>
+<td>tBodyAccJerkStdX</td>
+<td>numeric</td>
+<td>-0.99 / 0.54</td>
+</tr>
+<tr class="even">
+<td>50</td>
+<td>tBodyAccJerkStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.36</td>
+</tr>
+<tr class="odd">
+<td>51</td>
+<td>tBodyAccJerkStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.03</td>
+</tr>
+<tr class="even">
+<td>52</td>
+<td>tBodyGyroscopeStdX</td>
+<td>numeric</td>
+<td>-0.99 / 0.27</td>
+</tr>
+<tr class="odd">
+<td>53</td>
+<td>tBodyGyroscopeStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.48</td>
+</tr>
+<tr class="even">
+<td>54</td>
+<td>tBodyGyroscopeStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.56</td>
+</tr>
+<tr class="odd">
+<td>55</td>
+<td>tBodyGyroscopeJerkStdX</td>
+<td>numeric</td>
+<td>-1 / 0.18</td>
+</tr>
+<tr class="even">
+<td>56</td>
+<td>tBodyGyroscopeJerkStdY</td>
+<td>numeric</td>
+<td>-1 / 0.3</td>
+</tr>
+<tr class="odd">
+<td>57</td>
+<td>tBodyGyroscopeJerkStdZ</td>
+<td>numeric</td>
+<td>-1 / 0.19</td>
+</tr>
+<tr class="even">
+<td>58</td>
+<td>tBodyAccMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.43</td>
+</tr>
+<tr class="odd">
+<td>59</td>
+<td>tGravityAccMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.43</td>
+</tr>
+<tr class="even">
+<td>60</td>
+<td>tBodyAccJerkMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.45</td>
+</tr>
+<tr class="odd">
+<td>61</td>
+<td>tBodyGyroscopeMagStd</td>
+<td>numeric</td>
+<td>-0.98 / 0.3</td>
+</tr>
+<tr class="even">
+<td>62</td>
+<td>tBodyGyroscopeJerkMagStd</td>
+<td>numeric</td>
+<td>-1 / 0.25</td>
+</tr>
+<tr class="odd">
+<td>63</td>
+<td>FreqBodyAccStdX</td>
+<td>numeric</td>
+<td>-1 / 0.66</td>
+</tr>
+<tr class="even">
+<td>64</td>
+<td>FreqBodyAccStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.56</td>
+</tr>
+<tr class="odd">
+<td>65</td>
+<td>FreqBodyAccStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.69</td>
+</tr>
+<tr class="even">
+<td>66</td>
+<td>FreqBodyAccJerkStdX</td>
+<td>numeric</td>
+<td>-1 / 0.48</td>
+</tr>
+<tr class="odd">
+<td>67</td>
+<td>FreqBodyAccJerkStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.35</td>
+</tr>
+<tr class="even">
+<td>68</td>
+<td>FreqBodyAccJerkStdZ</td>
+<td>numeric</td>
+<td>-0.99 / -0.01</td>
+</tr>
+<tr class="odd">
+<td>69</td>
+<td>FreqBodyGyroscopeStdX</td>
+<td>numeric</td>
+<td>-0.99 / 0.2</td>
+</tr>
+<tr class="even">
+<td>70</td>
+<td>FreqBodyGyroscopeStdY</td>
+<td>numeric</td>
+<td>-0.99 / 0.65</td>
+</tr>
+<tr class="odd">
+<td>71</td>
+<td>FreqBodyGyroscopeStdZ</td>
+<td>numeric</td>
+<td>-0.99 / 0.52</td>
+</tr>
+<tr class="even">
+<td>72</td>
+<td>FreqBodyAccMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.18</td>
+</tr>
+<tr class="odd">
+<td>73</td>
+<td>FreqBodyAccJerkMagStd</td>
+<td>numeric</td>
+<td>-0.99 / 0.32</td>
+</tr>
+<tr class="even">
+<td>74</td>
+<td>FreqBodyGyroscopeMagStd</td>
+<td>numeric</td>
+<td>-0.98 / 0.24</td>
+</tr>
+<tr class="odd">
+<td>75</td>
+<td>FreqBodyGyroscopeJerkMagStd</td>
+<td>numeric</td>
+<td>-1 / 0.29</td>
+</tr>
+</tbody>
+</table>
